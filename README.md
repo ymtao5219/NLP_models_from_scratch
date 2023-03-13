@@ -12,3 +12,4 @@ A minimal example to implement Transformers.
 
 # References: 
   - [The Annotated Transformer](http://nlp.seas.harvard.edu/annotated-transformer/)
+  - [The Annotated Transformer](https://github.com/gordicaleksa/pytorch-original-transformer/blob/main/The%20Annotated%20Transformer%20%2B%2B.ipynb)
