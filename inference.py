@@ -8,6 +8,7 @@ def inference_test():
     src = torch.LongTensor([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
     src_mask = torch.ones(1, 1, 10)
 
+    # extract the encoder output, i.e. the key and value vectors
     memory = test_model.encode(src, src_mask)
     ys = torch.zeros(1, 1).type_as(src)
 
@@ -57,4 +58,7 @@ def make_model(
 if __name__ == "__main__":
     model = make_model(10, 10, 2)
     print(model)
+    
+    # Set a random seed for verifying the results
+    torch.manual_seed(42)
     run_tests()
